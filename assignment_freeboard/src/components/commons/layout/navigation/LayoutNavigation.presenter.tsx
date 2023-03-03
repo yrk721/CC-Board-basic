@@ -14,14 +14,6 @@ export default function LayoutNavigationUI(props: ILayoutNavigationUIProps) {
     void router.push("/");
   };
 
-  const onClickMoveWrite = () => {
-    void router.push("/boards/new");
-  };
-
-  const onClickMoveList = () => {
-    void router.push("/boards/[boardId]");
-  };
-
   return (
     <NavigationWrapper>
       <LogoBox onClick={onClickMoveHome}>
@@ -29,7 +21,7 @@ export default function LayoutNavigationUI(props: ILayoutNavigationUIProps) {
         <div>TALKER</div>
       </LogoBox>
       <Line />
-      <NavigationItem onClick={onClickMoveList}>
+      <NavigationItem onClick={props.onClickMoveToBoardDetail}>
         <img src="/images/banner/listIcon.png" />
         <div>전체 글 보기</div>
       </NavigationItem>

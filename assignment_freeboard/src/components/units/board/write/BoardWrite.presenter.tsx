@@ -11,17 +11,16 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
           <span>제목</span>
           <S.Subject
             type="text"
-            placeholder="제목을 작성해주세요."
+            placeholder=" 제목을 작성해주세요."
             onChange={props.onChangeTitle}
             defaultValue={props.data?.fetchBoard.title}
           />
           <S.Error>{props.titleError}</S.Error>
         </S.InputWrapper>
         <S.InputWrapper>
-          {/* <S.Label>내용</S.Label> */}
           <S.ContentsLabel>내용</S.ContentsLabel>
           <S.Contents
-            placeholder="내용을 작성해주세요."
+            placeholder=" 내용을 작성해주세요."
             onChange={props.onChangeContents}
             defaultValue={props.data?.fetchBoard.contents}
           />
@@ -45,7 +44,7 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
             <S.Label>작성자</S.Label>
             <S.Writer
               type="text"
-              placeholder="이름을 적어주세요."
+              placeholder=" 이름을 적어주세요."
               onChange={props.onChangeWriter}
               defaultValue={props.data?.fetchBoard.writer ?? ""}
               readOnly={!!props.data?.fetchBoard.writer}
@@ -56,14 +55,13 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
             <S.Label>비밀번호</S.Label>
             <S.Password
               type="password"
-              placeholder="비밀번호를 작성해주세요."
+              placeholder=" 비밀번호를 작성해주세요."
               onChange={props.onChangePassword}
             />
             <S.Error>{props.passwordError}</S.Error>
           </S.InputWrapper>
         </S.WriterWrapper>
         <S.ButtonWrapper>
-          {/* <S.SubmitButton>등록</S.SubmitButton> */}
           <S.SubmitButton
             onClick={props.isEdit ? props.onClickUpdate : props.onClickSubmit}
             isActive={props.isEdit ? true : props.isActive}

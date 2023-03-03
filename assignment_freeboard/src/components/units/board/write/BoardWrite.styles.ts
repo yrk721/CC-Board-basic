@@ -155,6 +155,9 @@ export const CancelButton = styled.button`
   color: white;
   background-color: #999999;
   cursor: pointer;
+  :hover {
+    background-color: #595959;
+  }
 `;
 
 export const Error = styled.div`

@@ -14,11 +14,16 @@ export default function LayoutNavigation() {
     void router.push("/boards/new");
   };
 
+  const onClickMoveToBoardDetail = (event: MouseEvent<HTMLDivElement>) => {
+    void router.push(`/boards/${event.currentTarget.id}`);
+  };
+
   return (
     <>
       <LayoutNavigationUI
         onClickMenu={onClickMenu}
         onClickMoveToBoardNew={onClickMoveToBoardNew}
+        onClickMoveToBoardDetail={onClickMoveToBoardDetail}
       />
     </>
   );
