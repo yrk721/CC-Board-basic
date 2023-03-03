@@ -1,0 +1,30 @@
+{
+  "name": "assignment_freeboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.9",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@material-ui/core": "^4.12.4",
+    "@next/font": "13.2.3",
+    "@types/node": "18.14.4",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "antd": "^5.2.3",
+    "axios": "^1.3.4",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.3",
+    "graphql": "^16.6.0",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "4.9.5"
+  }
+}
