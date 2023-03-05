@@ -33,8 +33,6 @@ export const ContentsWrapper = styled.div`
   display: flex;
   margin-top: 20px;
   padding: 10px;
-
-  /* background-color: orange; */
 `;
 
 export const ImageWrapper = styled.div`
@@ -49,8 +47,6 @@ export const AvatarWrapper = styled.div`
   display: flex;
   justify-content: start;
   width: 15%;
-
-  /* background-color: skyblue; */
 `;
 
 export const Avatar = styled.img`
@@ -84,16 +80,12 @@ export const Title = styled.h1`
   line-height: 20px;
   letter-spacing: -0.01em;
   color: #333333;
-
-  /* background-color: lightpink; */
 `;
 
 export const Contents = styled.div`
   width: 85%;
   height: 160px;
   overflow: scroll;
-  /* background-color: lightgreen; */
-
   font-family: "SUIT";
   font-style: normal;
   font-weight: 400;
@@ -111,8 +103,6 @@ export const BottomWrapper = styled.div`
   width: 1190px;
   padding-top: 50px;
   padding-bottom: 30px;
-
-  /* background-color: aquamarine; */
 `;
 
 export const Button = styled.button`

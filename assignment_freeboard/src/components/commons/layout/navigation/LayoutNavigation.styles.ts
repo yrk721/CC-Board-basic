@@ -12,7 +12,6 @@ export const NavigationWrapper = styled.div`
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin: 20px 0px 20px 20px;
-  /* background-color: yellowgreen; */
 `;
 
 export const NavigationItem = styled.div`

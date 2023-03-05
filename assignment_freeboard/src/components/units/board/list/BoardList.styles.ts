@@ -11,14 +11,11 @@ export const ListWrapper = styled.div`
   margin-left: -10px;
   border-radius: 5px;
   overflow: auto;
-  /* border: 2px solid grey; */
-  /* background-color: aliceblue; */
 `;
 
 export const BoardListItemWrapper = styled.div`
   width: 1210px;
   padding: 10px;
-  /* background-color: aliceblue; */
 `;
 
 export const BoardListItem = styled.div`
@@ -30,14 +27,12 @@ export const BoardListItem = styled.div`
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  /* background-color: red; */
 `;
 
 export const ColumnBasic = styled.div`
   width: 25%;
   text-align: end;
   color: #999999;
-  /* background-color: aqua; */
 `;
 
 export const ColumnTitle = styled.div`
@@ -57,5 +52,4 @@ export const ColumnTitle = styled.div`
   :hover {
     color: #6400ff;
   }
-  /* background-color: yellow; */
 `;
