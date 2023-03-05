@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+//  LayoutBanner.presenter
+// ----------------------------------------------------------------------------------
+
 import { CarouselWrapper, SliderItem } from "./LayoutBanner.styles";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
