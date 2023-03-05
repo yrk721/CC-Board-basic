@@ -1,7 +1,11 @@
+// ----------------------------------------------------------------------------------
+//  게시물 작성 컴포넌트 로직 - BoardWrite.container
+// ----------------------------------------------------------------------------------
+
+import BoardWriteUI from "./BoardWrite.presenter";
 import { ChangeEvent, useState } from "react";
 import { useMutation } from "@apollo/client";
 import { useRouter } from "next/router";
-import BoardWriteUI from "./BoardWrite.presenter";
 import { CREATE_BOARD, UPDATE_BOARD } from "./BoardWrite.queries";
 import { IBoardWriteProps, IUpdateBoardInput } from "./BoardWrite.types";
 import {
@@ -158,6 +162,10 @@ export default function BoardWrite(props: IBoardWriteProps) {
     }
   };
 
+  const onClickCancel = () => {
+    router.back();
+  };
+
   return (
     <BoardWriteUI
       isActive={isActive}
@@ -171,6 +179,7 @@ export default function BoardWrite(props: IBoardWriteProps) {
       onChangeContents={onChangeContents}
       onClickSubmit={onClickSubmit}
       onClickUpdate={onClickUpdate}
+      onClickCancel={onClickCancel}
       isEdit={props.isEdit}
       data={props.data}
       isOpen={isOpen}

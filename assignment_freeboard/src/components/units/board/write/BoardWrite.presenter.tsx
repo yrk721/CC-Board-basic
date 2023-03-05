@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+//  게시물 작성 컴포넌트 UI - BoardWrite.presenter
+// ----------------------------------------------------------------------------------
+
 import * as S from "./BoardWrite.styles";
 import { IBoardWriteUIProps } from "./BoardWrite.types";
 
@@ -68,7 +72,7 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
           >
             {props.isEdit ? "수정" : "등록"}
           </S.SubmitButton>
-          <S.CancelButton>취소</S.CancelButton>
+          <S.CancelButton onClick={props.onClickCancel}>취소</S.CancelButton>
         </S.ButtonWrapper>
       </S.Wrapper>
     </>

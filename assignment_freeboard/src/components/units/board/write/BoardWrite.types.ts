@@ -1,4 +1,8 @@
-import { ChangeEvent } from "react";
+// ----------------------------------------------------------------------------------
+//  게시물 작성 컴포넌트 type - BoardWrite.types
+// ----------------------------------------------------------------------------------
+
+import { ChangeEvent, MouseEvent } from "react";
 import { IQuery } from "../../../../commons/types/generated/types";
 
 export interface IBoardWriteProps {
@@ -27,6 +31,7 @@ export interface IBoardWriteUIProps {
   onChangeContents: (event: ChangeEvent<HTMLTextAreaElement>) => void;
   onClickSubmit: () => void;
   onClickUpdate: () => void;
+  onClickCancel: () => void;
   isEdit: boolean;
   data?: Pick<IQuery, "fetchBoard">;
   isOpen: boolean;

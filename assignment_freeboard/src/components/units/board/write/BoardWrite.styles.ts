@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+//  게시물 작성 컴포넌트 style - BoardWrite.styles
+// ----------------------------------------------------------------------------------
+
 import styled from "@emotion/styled";
 import { ISubmitButtonProps } from "./BoardWrite.types";
 
