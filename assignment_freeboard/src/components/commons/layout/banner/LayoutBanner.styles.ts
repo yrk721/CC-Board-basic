@@ -13,7 +13,7 @@ export const CarouselWrapper = styled.div`
   );
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  height: 350px;
+  height: 320px;
   margin: 20px 20px 20px 0px;
 `;
 
@@ -21,7 +21,7 @@ export const SliderItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 320px;
+  height: 290px;
   font-family: "SUIT";
   font-style: normal;
   font-weight: 800;

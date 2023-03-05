@@ -90,6 +90,8 @@ export const Title = styled.h1`
 
 export const Contents = styled.div`
   width: 85%;
+  height: 160px;
+  overflow: scroll;
   /* background-color: lightgreen; */
 
   font-family: "SUIT";
