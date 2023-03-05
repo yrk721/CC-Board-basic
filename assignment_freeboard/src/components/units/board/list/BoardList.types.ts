@@ -17,6 +17,7 @@ export interface IBoardListUIProps {
     variables?: Partial<IQueryFetchBoardsArgs> | undefined
   ) => Promise<ApolloQueryResult<Pick<IQuery, "fetchBoards">>>;
   count?: number;
+  onLoadMore: (page: number) => void;
 }
 
 export interface ITextTokenProps {

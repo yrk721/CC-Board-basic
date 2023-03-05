@@ -9,16 +9,16 @@ export const NavigationWrapper = styled.div`
   height: 1010px;
   color: black;
   background-color: #ffffff;
-  /* background-color: yellowgreen; */
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  margin: 20px 10px 20px 20px;
+  margin: 20px 0px 20px 20px;
+  /* background-color: yellowgreen; */
 `;
 
 export const NavigationItem = styled.div`
   display: flex;
   align-items: center;
-  margin: 20px 10px 10px 30px;
+  margin: 20px 20px 10px 30px;
 
   font-family: "SUIT";
   font-style: normal;
@@ -28,12 +28,16 @@ export const NavigationItem = styled.div`
   letter-spacing: -0.01em;
   cursor: pointer;
   :hover {
-    color: gray;
+    color: #999999;
   }
   img {
     height: 30px;
     margin-right: 10px;
-    /* object-fit: contain; */
+  }
+  :hover img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.5;
   }
 `;
 
@@ -52,12 +56,16 @@ export const LogoBox = styled.div`
 
   cursor: pointer;
   :hover {
-    color: gray;
+    color: #999999;
   }
   img {
     height: 30px;
     margin-right: 10px;
-    /* object-fit: contain; */
+  }
+  :hover img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.5;
   }
 `;
 

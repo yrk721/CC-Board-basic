@@ -15,14 +15,33 @@ import { MouseEvent } from "react";
 
 export default function BoardList() {
   const router = useRouter();
-  const { data, refetch } = useQuery<
+  const { data, refetch, fetchMore } = useQuery<
     Pick<IQuery, "fetchBoards">,
     IQueryFetchBoardsArgs
   >(FETCH_BOARDS);
+
   const { data: dataBoardsCount } = useQuery<
     Pick<IQuery, "fetchBoardsCount">,
     IQueryFetchBoardsCountArgs
   >(FETCH_BOARDS_COUNT);
+
+  const onLoadMore = () => {
+    if (data === undefined) return;
+
+    void fetchMore({
+      variables: { page: Math.ceil(data?.fetchBoards.length / 10) + 1 },
+      updateQuery: (prev, { fetchMoreResult }) => {
+        if (fetchMoreResult.fetchBoards === undefined) {
+          return {
+            fetchBoards: [...prev.fetchBoards],
+          };
+        }
+        return {
+          fetchBoards: [...prev.fetchBoards, ...fetchMoreResult.fetchBoards],
+        };
+      },
+    });
+  };
 
   const onClickMoveToBoardNew = () => {
     void router.push("/boards/new");
@@ -39,6 +58,7 @@ export default function BoardList() {
       onClickMoveToBoardDetail={onClickMoveToBoardDetail}
       refetch={refetch}
       count={dataBoardsCount?.fetchBoardsCount}
+      onLoadMore={onLoadMore}
     />
   );
 }

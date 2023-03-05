@@ -14,7 +14,7 @@ export const CarouselWrapper = styled.div`
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   height: 320px;
-  margin: 20px 20px 20px 0px;
+  margin: 20px 20px 20px -5px;
 `;
 
 export const SliderItem = styled.div`
