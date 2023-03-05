@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+//  LayoutNavigation.types
+// ----------------------------------------------------------------------------------
+
 import { MouseEvent, MouseEventHandler } from "react";
 
 export interface ILayoutNavigationUIProps {

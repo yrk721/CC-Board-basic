@@ -1,20 +1,24 @@
+// ----------------------------------------------------------------------------------
+//  LayoutNavigation.styles
+// ----------------------------------------------------------------------------------
+
 import styled from "@emotion/styled";
 
 export const NavigationWrapper = styled.div`
-  width: 250px;
-  height: 1000px;
+  width: 255px;
+  height: 1010px;
   color: black;
   background-color: #ffffff;
   /* background-color: yellowgreen; */
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  margin: 20px 10px 20px 15px;
+  margin: 20px 10px 20px 20px;
 `;
 
 export const NavigationItem = styled.div`
   display: flex;
   align-items: center;
-  margin: 20px 30px 10px 30px;
+  margin: 20px 10px 10px 30px;
 
   font-family: "SUIT";
   font-style: normal;
@@ -60,7 +64,6 @@ export const LogoBox = styled.div`
 export const Line = styled.div`
   height: 2px;
   width: 210px;
-  margin-left: 20px;
-  margin: 20px 0px 40px 20px;
+  margin: 20px 0px 40px 22px;
   background-color: #e5e5e5;
 `;
