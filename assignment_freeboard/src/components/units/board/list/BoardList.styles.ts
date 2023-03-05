@@ -41,8 +41,10 @@ export const ColumnBasic = styled.div`
 `;
 
 export const ColumnTitle = styled.div`
-  margin-left: 30px;
   width: 70%;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: start;
   font-family: "SUIT";
   font-style: normal;
