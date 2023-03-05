@@ -11,20 +11,25 @@ export default function BoardDetailUI(props: IBoardDetailUIProps) {
     <S.Wrapper>
       <S.CardWrapper>
         <S.Header>
+          <S.Title>{props.data?.fetchBoard?.title}</S.Title>
+          <S.CreatedAt>
+            {getDate(props.data?.fetchBoard?.createdAt)}
+          </S.CreatedAt>
+        </S.Header>
+
+        <S.ImageWrapper>
+          <img src="/images/list/list01.png" />
+          <img src="/images/list/list02.png" />
+          <img src="/images/list/list03.png" />
+        </S.ImageWrapper>
+
+        <S.ContentsWrapper>
           <S.AvatarWrapper>
             <S.Avatar src="/images/avatar.png" />
-            <S.Info>
-              <S.Writer>{props.data?.fetchBoard?.writer}</S.Writer>
-              <S.CreatedAt>
-                {getDate(props.data?.fetchBoard?.createdAt)}
-              </S.CreatedAt>
-            </S.Info>
+            <S.Writer>{props.data?.fetchBoard?.writer}</S.Writer>
           </S.AvatarWrapper>
-        </S.Header>
-        <S.Body>
-          <S.Title>{props.data?.fetchBoard?.title}</S.Title>
           <S.Contents>{props.data?.fetchBoard?.contents}</S.Contents>
-        </S.Body>
+        </S.ContentsWrapper>
       </S.CardWrapper>
       <S.BottomWrapper>
         <S.Button onClick={props.onClickMoveToBoardList}>글목록</S.Button>

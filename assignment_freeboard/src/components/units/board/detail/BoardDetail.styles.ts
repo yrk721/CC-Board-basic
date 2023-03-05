@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 
 export const CardWrapper = styled.div`
   width: 1190px;
-  height: 500px;
+  height: 550px;
   margin: 20px 20px 0px 0px;
   padding: 0px 50px 50px 50px;
   border-radius: 10px;
@@ -25,44 +25,80 @@ export const Header = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #bdbdbd;
+  border-bottom: 2px solid #e5e5e5;
   padding-bottom: 20px;
+`;
+
+export const ContentsWrapper = styled.div`
+  display: flex;
+  margin-top: 20px;
+  padding: 10px;
+
+  /* background-color: orange; */
+`;
+
+export const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 20px;
+  height: 215px;
 `;
 
 export const AvatarWrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  margin-top: 50px;
+  justify-content: start;
+  width: 15%;
+
+  /* background-color: skyblue; */
 `;
 
 export const Avatar = styled.img`
-  margin-right: 20px;
+  margin-right: 10px;
+  height: 20px;
 `;
 
-export const Info = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+export const Writer = styled.div`
+  font-family: "SUIT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
 `;
-
-export const Writer = styled.div``;
 
 export const CreatedAt = styled.div`
-  margin-top: 5px;
-`;
-
-export const Body = styled.div`
-  width: 100%;
-  min-height: 800px;
+  padding-top: 40px;
+  justify-content: end;
+  margin-right: 10px;
+  color: #909090;
 `;
 
 export const Title = styled.h1`
-  padding-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-family: "SUIT";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 22px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #333333;
+
+  /* background-color: lightpink; */
 `;
 
 export const Contents = styled.div`
-  padding-top: 40px;
-  padding-bottom: 120px;
+  width: 85%;
+  /* background-color: lightgreen; */
+
+  font-family: "SUIT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  color: #333333;
 `;
 
 export const BottomWrapper = styled.div`
@@ -70,8 +106,11 @@ export const BottomWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 1100px;
-  padding-top: 55px;
+  width: 1190px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+
+  /* background-color: aquamarine; */
 `;
 
 export const Button = styled.button`

@@ -18,7 +18,7 @@ export const BoardListItem = styled.div`
   height: 50px;
   margin-bottom: 15px;
   background: #ffffff;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   /* background-color: red; */
 `;
