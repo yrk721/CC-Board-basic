@@ -100,7 +100,7 @@ export const WriterWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 30px;
 `;
 
 export const Writer = styled.input`
@@ -125,7 +125,8 @@ export const ButtonWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 `;
 
 export const SubmitButton = styled.button`
@@ -141,7 +142,6 @@ export const SubmitButton = styled.button`
   color: white;
   background-color: #999999;
   cursor: pointer;
-
   background-color: ${(props: ISubmitButtonProps) =>
     props.isActive ? "#6400ff" : "none"};
 `;
@@ -153,7 +153,6 @@ export const CancelButton = styled.button`
   border-radius: 30px;
   font-size: 16px;
   font-weight: 500;
-
   margin: 65px 10px 20px 10px;
   padding: 5px 20px;
   color: white;
@@ -164,8 +163,15 @@ export const CancelButton = styled.button`
   }
 `;
 
+export const ErrorWrapper = styled.div`
+  display: flex;
+  width: 1000px;
+`;
+
 export const Error = styled.div`
+  width: 400px;
   padding-top: 10px;
   font-size: 14px;
+  margin-left: 95px;
   color: red;
 `;

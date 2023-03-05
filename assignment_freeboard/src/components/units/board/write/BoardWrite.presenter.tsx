@@ -19,8 +19,8 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
             onChange={props.onChangeTitle}
             defaultValue={props.data?.fetchBoard.title}
           />
-          <S.Error>{props.titleError}</S.Error>
         </S.InputWrapper>
+        <S.Error>{props.titleError}</S.Error>
         <S.InputWrapper>
           <S.ContentsLabel>내용</S.ContentsLabel>
           <S.Contents
@@ -28,9 +28,8 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
             onChange={props.onChangeContents}
             defaultValue={props.data?.fetchBoard.contents}
           />
-          <S.Error>{props.contentsError}</S.Error>
         </S.InputWrapper>
-
+        <S.Error>{props.contentsError}</S.Error>
         <S.ImageWrapper>
           <S.Label>이미지</S.Label>
           <S.UploadButton>
@@ -53,7 +52,6 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
               defaultValue={props.data?.fetchBoard.writer ?? ""}
               readOnly={!!props.data?.fetchBoard.writer}
             />
-            <S.Error>{props.writerError}</S.Error>
           </S.InputWrapper>
           <S.InputWrapper>
             <S.Label>비밀번호</S.Label>
@@ -62,9 +60,12 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
               placeholder=" 비밀번호를 작성해주세요."
               onChange={props.onChangePassword}
             />
-            <S.Error>{props.passwordError}</S.Error>
           </S.InputWrapper>
         </S.WriterWrapper>
+        <S.ErrorWrapper>
+          <S.Error>{props.writerError}</S.Error>
+          <S.Error>{props.passwordError}</S.Error>
+        </S.ErrorWrapper>
         <S.ButtonWrapper>
           <S.SubmitButton
             onClick={props.isEdit ? props.onClickUpdate : props.onClickSubmit}
