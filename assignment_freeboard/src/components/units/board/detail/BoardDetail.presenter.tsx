@@ -7,6 +7,10 @@ import { getDate } from "../../../../commons/libraries/utils";
 import { IBoardDetailUIProps } from "./BoardDetail.types";
 
 export default function BoardDetailUI(props: IBoardDetailUIProps) {
+  const onClickDelete = async () => {
+    await props.onClickDelete(props.data?.fetchBoard?._id ?? "");
+  };
+
   return (
     <S.Wrapper>
       <S.CardWrapper>
@@ -34,7 +38,7 @@ export default function BoardDetailUI(props: IBoardDetailUIProps) {
       <S.BottomWrapper>
         <S.Button onClick={props.onClickMoveToBoardList}>글목록</S.Button>
         <S.Button onClick={props.onClickMoveToBoardEdit}>수정</S.Button>
-        <S.Button>삭제</S.Button>
+        <S.Button onClick={onClickDelete}>삭제</S.Button>
       </S.BottomWrapper>
     </S.Wrapper>
   );

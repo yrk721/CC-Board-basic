@@ -8,4 +8,6 @@ export interface IBoardDetailUIProps {
   data?: Pick<IQuery, "fetchBoard">;
   onClickMoveToBoardList: () => void;
   onClickMoveToBoardEdit: () => void;
+  // onClickDelete: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClickDelete: (boardId: string) => Promise<void>;
 }
