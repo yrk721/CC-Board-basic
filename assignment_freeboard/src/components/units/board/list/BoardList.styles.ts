@@ -1,53 +1,50 @@
+// ----------------------------------------------------------------------------------
+//  게시물 목록 컴포넌트 style - BoardList.styles
+// ----------------------------------------------------------------------------------
+
 import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
-  width: 1150px;
-  margin: 10px;
+  width: 1190px;
+  padding: 5px 0px 10px 0px;
+  /* background-color: aliceblue; */
 `;
 
-export const TableTop = styled.div`
-  border-top: 2px solid gray;
-  margin-top: 20px;
-`;
-
-export const TableBottom = styled.div`
-  border-bottom: 2px solid gray;
-`;
-
-export const Row = styled.div`
+export const BoardListItem = styled.div`
   display: flex;
   flex-direction: row;
-  height: 52px;
-  line-height: 52px;
-  border-bottom: 1px solid gray;
-
-  :hover {
-    color: blue;
-  }
-`;
-
-export const ColumnHeaderBasic = styled.div`
-  width: 10%;
-  text-align: center;
-`;
-
-export const ColumnHeaderTitle = styled.div`
-  width: 70%;
-  text-align: center;
+  align-items: center;
+  width: 1190px;
+  height: 50px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  /* background-color: red; */
 `;
 
 export const ColumnBasic = styled.div`
-  width: 10%;
-  text-align: center;
+  width: 25%;
+  text-align: end;
+  color: #999999;
+  /* background-color: aqua; */
 `;
 
 export const ColumnTitle = styled.div`
+  /* background-color: yellow; */
+  margin-left: 30px;
   width: 70%;
-  text-align: center;
+  text-align: start;
+  font-family: "SUIT";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #333333;
   cursor: pointer;
-
   :hover {
-    color: blue;
+    color: 6400ff;
   }
 `;
 
@@ -55,23 +52,23 @@ export const Footer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 50px;
+  width: 1190px;
+  padding-top: 20px;
+  background-color: green;
 `;
 
-export const PencilIcon = styled.img``;
+// export const Button = styled.button`
+//   width: 171px;
+//   height: 52px;
+//   background-color: white;
+//   border-radius: 15px;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-evenly;
+//   align-items: center;
+//   cursor: pointer;
 
-export const Button = styled.button`
-  width: 171px;
-  height: 52px;
-  background-color: white;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  cursor: pointer;
-
-  :hover {
-    background-color: #f5f2fc;
-  }
-`;
+//   :hover {
+//     background-color: #f5f2fc;
+//   }
+// `;

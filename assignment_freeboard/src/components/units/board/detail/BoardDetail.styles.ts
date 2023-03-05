@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+//  게시물 상세 컴포넌트 style - BoardDetail.styles
+// ----------------------------------------------------------------------------------
+
 import styled from "@emotion/styled";
 import { LikeOutlined, DislikeOutlined } from "@ant-design/icons";
 

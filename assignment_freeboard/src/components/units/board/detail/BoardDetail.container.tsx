@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+//  게시물 상세 컴포넌트 로직 - BoardDetail.container
+// ----------------------------------------------------------------------------------
+
 import { useMutation, useQuery } from "@apollo/client";
 import { useRouter } from "next/router";
 import {

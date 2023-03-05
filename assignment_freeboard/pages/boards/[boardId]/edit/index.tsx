@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+//  게시물 수정 페이지
+// ----------------------------------------------------------------------------------
+
 import { gql, useQuery } from "@apollo/client";
 import { useRouter } from "next/router";
 import {
@@ -12,12 +16,6 @@ const FETCH_BOARD = gql`
       writer
       title
       contents
-      youtubeUrl
-      boardAddress {
-        zipcode
-        address
-        addressDetail
-      }
     }
   }
 `;

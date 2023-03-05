@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+//  게시물 목록 컴포넌트 로직 - BoardList.container
+// ----------------------------------------------------------------------------------
+
 import BoardListUI from "./BoardList.presenter";
 import { useQuery } from "@apollo/client";
 import { FETCH_BOARDS, FETCH_BOARDS_COUNT } from "./BoardList.queries";

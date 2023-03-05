@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+//  게시물 상세 컴포넌트 UI - BoardDetail.presenter
+// ----------------------------------------------------------------------------------
+
 import { Tooltip } from "antd";
 import { getDate } from "../../../../commons/libraries/utils";
 import * as S from "./BoardDetail.styles";

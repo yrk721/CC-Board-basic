@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------------
+//  게시물 상세 컴포넌트 쿼리 - BoardDetail.queries
+// ----------------------------------------------------------------------------------
+
 import { gql } from "@apollo/client";
 
 export const FETCH_BOARD = gql`
@@ -10,11 +14,6 @@ export const FETCH_BOARD = gql`
       youtubeUrl
       likeCount
       dislikeCount
-      boardAddress {
-        zipcode
-        address
-        addressDetail
-      }
       createdAt
     }
   }
