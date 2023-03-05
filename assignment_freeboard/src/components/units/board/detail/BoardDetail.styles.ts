@@ -3,7 +3,6 @@
 // ----------------------------------------------------------------------------------
 
 import styled from "@emotion/styled";
-import { LikeOutlined, DislikeOutlined } from "@ant-design/icons";
 
 export const Wrapper = styled.div`
   /* width: 1200px; */
@@ -11,8 +10,8 @@ export const Wrapper = styled.div`
 `;
 
 export const CardWrapper = styled.div`
-  width: 1100px;
-  height: 850px;
+  width: 1190px;
+  height: 500px;
   margin: 20px 20px 0px 0px;
   padding: 0px 50px 50px 50px;
   border-radius: 10px;
@@ -91,39 +90,4 @@ export const Button = styled.button`
     background-color: #6400ff;
     border-color: white;
   }
-`;
-
-export const IconWrapper = styled.div`
-  text-align: center;
-`;
-
-export const LikeWrapper = styled.div`
-  padding-top: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
-
-export const LikeIcon = styled(LikeOutlined)`
-  font-size: 24px;
-  color: #6400ff;
-  margin: 0px 20px;
-  cursor: pointer;
-`;
-
-export const DislikeIcon = styled(DislikeOutlined)`
-  font-size: 24px;
-  color: #828282;
-  margin: 0px 20px;
-  cursor: pointer;
-`;
-
-export const LikeCount = styled.div`
-  color: #6400ff;
-  margin-top: 10px;
-`;
-
-export const DislikeCount = styled.div`
-  color: #828282;
-  margin-top: 10px;
 `;
